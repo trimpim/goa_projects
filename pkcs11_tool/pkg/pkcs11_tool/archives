@@ -1,0 +1,7 @@
+_/src/posix
+_/src/libc
+_/src/vfs
+_/src/pcsc-lite
+_/src/libusb
+_/src/vfs_libusb
+_/src/opensc_pkcs11

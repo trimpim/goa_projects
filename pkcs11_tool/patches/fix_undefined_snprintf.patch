@@ -1,0 +1,10 @@
++++ src/src/tools/pkcs15-tool.c	2022-06-16 13:51:16.974456015 +0200
+@@ -22,8 +22,6 @@
+ 
+ #ifdef __APPLE__
+ #define _XOPEN_SOURCE 600
+-#else
+-#define _XOPEN_SOURCE 500
+ #endif
+ #include <assert.h>
+ #include <ctype.h>

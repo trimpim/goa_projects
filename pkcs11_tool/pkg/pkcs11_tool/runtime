@@ -1,0 +1,44 @@
+<runtime ram="10M" caps="500" binary="pkcs11-tool">
+
+	<requires>
+		<usb/>
+		<timer/>
+	</requires>
+
+	<content>
+		<rom label="pkcs11-tool"/>
+		<rom label="libc.lib.so"/>
+		<rom label="libm.lib.so"/>
+		<rom label="posix.lib.so"/>
+		<rom label="vfs.lib.so"/>
+		<rom label="pcsc-lite.lib.so"/>
+		<rom label="ccid.lib.so"/>
+		<rom label="libusb.lib.so"/>
+		<rom label="vfs_libusb.lib.so"/>
+		<rom label="opensc_pkcs11.lib.so"/>
+	</content>
+
+	<config ld_verbose="yes">
+
+		<libc stdout="/dev/log" stderr="/dev/log"/>
+
+		<vfs>
+			<dir name="dev">
+				<log/>
+				<libusb/>
+			</dir>
+		</vfs>
+
+		<arg value="pkcs11-tool" />
+		<arg value="--module" />
+		<arg value="opensc_pkcs11.lib.so" />
+		<arg value="--login" />
+		<arg value="--pin" />
+		<arg value="123456" />
+		<arg value="--list-objects" />
+
+		<env key="LIBUSB_DEBUG" value="1"/>
+
+	</config>
+
+</runtime>

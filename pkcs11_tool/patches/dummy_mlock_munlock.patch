@@ -1,0 +1,20 @@
++++ src/src/libopensc/sc.c	2022-06-16 13:25:28.490962707 +0200
+@@ -1138,3 +1138,18 @@
+ {
+ 	free(p);
+ }
++
++
++/*****************************************************************
++ ** Dummy definitions patched into this file by the GOA project **
++ *****************************************************************/
++
++#define TRACE_AND_STOP \
++	do { \
++		printf("%s not implemented\n", __func__); \
++		while(1) { } \
++	} while (0)
++
++int	mlock(const void *a, size_t b) { TRACE_AND_STOP; }
++
++int	munlock(const void *a, size_t b) {TRACE_AND_STOP; }

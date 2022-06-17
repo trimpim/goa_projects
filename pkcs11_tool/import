@@ -1,0 +1,10 @@
+LICENSE   := BSD
+VERSION   := 0.22.0-rc2
+DOWNLOADS := OpenSC.git
+
+URL(OpenSC) := https://github.com/OpenSC/OpenSC.git
+REV(OpenSC) := 0.22.0-rc2
+DIR(OpenSC) := src
+
+PATCHES := patches/dummy_mlock_munlock.patch \
+           patches/fix_undefined_snprintf.patch
