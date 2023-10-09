@@ -1,0 +1,34 @@
++++ src/configure.ac	2023-10-09 13:10:10.679747069 +0200
+@@ -499,19 +499,19 @@
+ if test "${WIN32}" = "no"; then
+ 	dnl dl support
+ 	AC_ARG_VAR([LDL_LIBS], [linker flags for ldl])
+-	if test -z "${LDL_LIBS}"; then
+-		AC_CHECK_LIB(
+-			[dl],
+-			[dlopen],
+-			[LDL_LIBS="-ldl"],
+-			AC_CHECK_LIB(
+-				[dld],
+-				[dlopen],
+-				[LDL_LIBS="-ldld"],
+-				AC_MSG_ERROR([unable to find the dlopen() function])
+-			)
+-		)
+-	fi
++	#if test -z "${LDL_LIBS}"; then
++	#	AC_CHECK_LIB(
++	#		[dl],
++	#		[dlopen],
++	#		[LDL_LIBS="-ldl"],
++	#		AC_CHECK_LIB(
++	#			[dld],
++	#			[dlopen],
++	#			[LDL_LIBS="-ldld"],
++	#			AC_MSG_ERROR([unable to find the dlopen() function])
++	#		)
++	#	)
++	#fi
+ 
+ 	dnl Special check for pthread support.
+ 	AX_PTHREAD(
