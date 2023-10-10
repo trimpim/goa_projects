@@ -1,4 +1,3 @@
 ac_cv_search_dlopen=-l:libc.lib.so
-ac_cv_prog_CPP=genode-x86-cpp
 PCSC_CFLAGS=-nostdinc
 --with-pcsc-provider=pcsc-lite.lib.so
