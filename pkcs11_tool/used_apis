@@ -1,3 +1,7 @@
-local/api/libc
-local/api/posix
-local/api/pcsc-lite
+trimpim/api/base
+trimpim/api/libc
+trimpim/api/libusb
+trimpim/api/openssl
+trimpim/api/pcsc-lite
+trimpim/api/posix
+trimpim/api/so

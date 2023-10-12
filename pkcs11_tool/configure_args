@@ -1,3 +1,7 @@
-ac_cv_search_dlopen=-l:libc.lib.so
+#ac_cv_search_dlopen=-l:libc.lib.so
 PCSC_CFLAGS=-nostdinc
 --with-pcsc-provider=pcsc-lite.lib.so
+LDFLAGS=-nodefaultlibs -static-libgcc -nostartfiles
+--disable-shared
+--disable-tests
+#LDL_LIBS=-Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/pirmin/.local/goa/share/goa/ld/genode_dyn.dl -T /home/pirmin/.local/goa/share/goa/ld/genode_dyn.ld

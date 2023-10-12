@@ -1,3 +1,13 @@
++++ src/configure.ac	2023-10-12 11:16:18.775988523 +0200
+@@ -961,7 +961,7 @@
+ 		LIB_PRE=""
+ 		;;
+ 	*)
+-		DYN_LIB_EXT=".so"
++		DYN_LIB_EXT=".lib.so"
+ 		LIBDIR="\$(libdir)/"
+ 		LIB_PRE="lib"
+ 		;;
 +++ src/configure.ac	2023-10-09 13:10:10.679747069 +0200
 @@ -499,19 +499,19 @@
  if test "${WIN32}" = "no"; then

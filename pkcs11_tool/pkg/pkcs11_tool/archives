@@ -1,7 +1,8 @@
-_/src/posix
-_/src/libc
-_/src/vfs
-_/src/pcsc-lite
-_/src/libusb
-_/src/vfs_libusb
-_/src/opensc_pkcs11
+trimpim/src/posix
+trimpim/src/libc
+trimpim/src/vfs
+trimpim/src/openssl
+trimpim/src/pcsc-lite
+trimpim/src/libusb
+trimpim/src/vfs_libusb
+trimpim/src/opensc_pkcs11
