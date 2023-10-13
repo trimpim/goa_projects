@@ -1,7 +1,4 @@
 #clean
 CFLAGS=-fno-omit-frame-pointer -Wno-deprecated-declarations
-V=1
-#LDFLAGS:=${LDFLAGS} ${LDLIBS}
-#LDFLAGS += -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/pirmin/.local/goa/share/goa/ld/genode_dyn.dl
 
 # vi: ft=make :
